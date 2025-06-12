@@ -8,6 +8,7 @@ A decentralized AI economy platform enabling autonomous AI-to-AI transactions, d
 - **AI Integration**: Qwen AI for dynamic pricing and strategy evolution
 - **Pear.js**: Decentralized P2P transaction coordination
 - **GitMCP**: Autonomous strategy evolution and deployment
+- **Qiskit Code Assistant**: AI-assisted quantum circuit generation and optimization
 - **React Native Frontend**: Real-time monitoring and management
 
 ## 🏗 Project Structure
@@ -19,7 +20,12 @@ AI-HiveMind-Autonomous/
 ├── backend/            # Node.js services and APIs
 ├── ai/                 # Qwen AI integration
 ├── scripts/            # Deployment and utility scripts
-└── docs/               # Documentation
+├── examples/           # Example usage scripts
+├── docs/               # Documentation
+│   └── QISKIT-INTEGRATION.md  # Qiskit Code Assistant documentation
+└── src/
+    └── agents/
+        └── QiskitCodeAssistant.ts  # Qiskit Code Assistant implementation
 ```
 
 ## 🛠 Setup
@@ -47,6 +53,46 @@ AI-HiveMind-Autonomous/
    # Install Python dependencies
    pip install -r requirements.txt
    ```
+
+## 🌌 Quantum Computing with Qiskit Code Assistant
+
+The platform includes a powerful Qiskit Code Assistant that helps generate and optimize quantum circuits using natural language. This integration allows you to:
+
+- Generate Qiskit code from natural language descriptions
+- Optimize quantum circuits for better performance
+- Execute circuits on IBM Quantum simulators and hardware
+
+### Quick Start with Qiskit Code Assistant
+
+1. Install Ollama on your preferred drive (e.g., D:):
+   ```bash
+   # Download Ollama from https://ollama.ai/
+   # Run the installer and choose D: as the installation directory
+   # Add Ollama to your system PATH if not done automatically
+   ```
+
+2. Pull the Qiskit model (this may take some time as the model is several GB):
+   ```bash
+   # Set OLLAMA_MODELS to a directory on your D: drive
+   setx OLLAMA_MODELS "D:\path\to\ollama\models"
+   
+   # Then pull the Qiskit model
+   npm run ollama:pull-model
+   ```
+
+3. Start the Ollama server in a separate terminal:
+   ```bash
+   # Make sure to use the same OLLAMA_MODELS directory
+   set OLLAMA_MODELS=D:\path\to\ollama\models
+   npm run ollama:serve
+   ```
+
+4. Run the example:
+   ```bash
+   npm run qiskit:example
+   ```
+
+For detailed instructions, see the [Qiskit Integration Guide](./docs/QISKIT-INTEGRATION.md).
 
 ## 🏄‍♂️ Quick Start
 

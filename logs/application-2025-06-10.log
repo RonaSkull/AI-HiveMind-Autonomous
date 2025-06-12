@@ -1,0 +1,967 @@
+[2025-06-10T14:09:52.101Z] info: Agent initialized
+{
+  "context": "AITradingAgent"
+}
+[2025-06-10T14:09:52.108Z] info: Agent initialized
+{
+  "context": "OrchestratorAgent"
+}
+[2025-06-10T14:09:52.113Z] info: Agent initialized
+{
+  "context": "ResearchAgent"
+}
+[2025-06-10T14:09:52.115Z] info: Starting AI HiveMind Autonomous System...
+{
+  "context": "App"
+}
+[2025-06-10T14:09:52.117Z] info: Starting agent
+{
+  "context": "OrchestratorAgent"
+}
+[2025-06-10T14:09:52.119Z] info: Initializing Orchestrator Agent
+{
+  "context": "OrchestratorAgent"
+}
+[2025-06-10T14:09:52.120Z] info: Starting agent
+{
+  "context": "AITradingAgent"
+}
+[2025-06-10T14:09:52.142Z] info: Initializing AI Trading Agent
+{
+  "context": "AITradingAgent"
+}
+[2025-06-10T14:09:52.146Z] info: Starting agent
+{
+  "context": "ResearchAgent"
+}
+[2025-06-10T14:09:52.149Z] info: Initializing Research Agent
+{
+  "context": "ResearchAgent"
+}
+[2025-06-10T14:09:52.156Z] info: All agents started successfully.
+{
+  "context": "App"
+}
+[2025-06-10T14:09:52.159Z] debug: Enqueuing task 1749564592156-xd9mmynjh of type EXECUTE_TRADING_STRATEGY
+{
+  "context": "OrchestratorAgent"
+}
+[2025-06-10T14:09:57.155Z] debug: Starting task 1749564592156-xd9mmynjh of type EXECUTE_TRADING_STRATEGY
+{
+  "context": "OrchestratorAgent"
+}
+[2025-06-10T14:09:57.158Z] info: Orchestrator processing task 1749564592156-xd9mmynjh: EXECUTE_TRADING_STRATEGY
+{
+  "context": "OrchestratorAgent"
+}
+[2025-06-10T14:09:57.161Z] info: Executing trading strategy...
+{
+  "context": "OrchestratorAgent",
+  "market": "CRYPTO",
+  "riskLevel": "MEDIUM"
+}
+[2025-06-10T14:09:57.163Z] debug: Enqueuing task 1749564597161-8w9n463jo of type ANALYZE_MARKET
+{
+  "context": "AITradingAgent"
+}
+[2025-06-10T14:09:57.165Z] debug: Starting task 1749564597161-8w9n463jo of type ANALYZE_MARKET
+{
+  "context": "AITradingAgent"
+}
+[2025-06-10T14:09:57.167Z] info: Processing task 1749564597161-8w9n463jo of type ANALYZE_MARKET
+{
+  "context": "AITradingAgent"
+}
+[2025-06-10T14:09:57.168Z] debug: Analyzing market data
+{
+  "context": "AITradingAgent"
+}
+[2025-06-10T14:09:58.333Z] error: Error analyzing market: Converting circular structure to JSON
+    --> starting at object with constructor 'ClientRequest'
+    |     property 'res' -> object with constructor 'IncomingMessage'
+    --- property 'req' closes the circle
+{
+  "context": "AITradingAgent",
+  "stack": "TypeError: Converting circular structure to JSON\n    --> starting at object with constructor 'ClientRequest'\n    |     property 'res' -> object with constructor 'IncomingMessage'\n    --- property 'req' closes the circle\n    at JSON.stringify (<anonymous>)\n    at Printf.template (D:\\AI-HiveMind-Autonomous\\src\\utils\\logger.ts:10:59)\n    at Printf.transform (D:\\AI-HiveMind-Autonomous\\node_modules\\logform\\printf.js:11:26)\n    at Format.transform (D:\\AI-HiveMind-Autonomous\\node_modules\\logform\\combine.js:20:24)\n    at Console._write (D:\\AI-HiveMind-Autonomous\\node_modules\\winston-transport\\modern.js:91:33)\n    at doWrite (D:\\AI-HiveMind-Autonomous\\node_modules\\readable-stream\\lib\\_stream_writable.js:390:139)\n    at writeOrBuffer (D:\\AI-HiveMind-Autonomous\\node_modules\\readable-stream\\lib\\_stream_writable.js:381:5)\n    at Writable.write (D:\\AI-HiveMind-Autonomous\\node_modules\\readable-stream\\lib\\_stream_writable.js:302:11)\n    at DerivedLogger.ondata (D:\\AI-HiveMind-Autonomous\\node_modules\\readable-stream\\lib\\_stream_readable.js:629:20)\n    at DerivedLogger.emit (node:events:530:35)"
+}
+[2025-06-10T14:10:35.231Z] info: Agent initialized
+{
+  "context": "AITradingAgent"
+}
+[2025-06-10T14:10:35.233Z] info: Agent initialized
+{
+  "context": "OrchestratorAgent"
+}
+[2025-06-10T14:10:35.234Z] info: Agent initialized
+{
+  "context": "ResearchAgent"
+}
+[2025-06-10T14:10:35.235Z] info: Starting AI HiveMind Autonomous System...
+{
+  "context": "App"
+}
+[2025-06-10T14:10:35.236Z] info: Starting agent
+{
+  "context": "OrchestratorAgent"
+}
+[2025-06-10T14:10:35.237Z] info: Initializing Orchestrator Agent
+{
+  "context": "OrchestratorAgent"
+}
+[2025-06-10T14:10:35.237Z] info: Starting agent
+{
+  "context": "AITradingAgent"
+}
+[2025-06-10T14:10:35.238Z] info: Initializing AI Trading Agent
+{
+  "context": "AITradingAgent"
+}
+[2025-06-10T14:10:35.239Z] info: Starting agent
+{
+  "context": "ResearchAgent"
+}
+[2025-06-10T14:10:35.239Z] info: Initializing Research Agent
+{
+  "context": "ResearchAgent"
+}
+[2025-06-10T14:10:35.241Z] info: All agents started successfully.
+{
+  "context": "App"
+}
+[2025-06-10T14:10:35.242Z] debug: Enqueuing task 1749564635241-r0tqjkhtm of type EXECUTE_TRADING_STRATEGY
+{
+  "context": "OrchestratorAgent"
+}
+[2025-06-10T14:10:40.256Z] debug: Starting task 1749564635241-r0tqjkhtm of type EXECUTE_TRADING_STRATEGY
+{
+  "context": "OrchestratorAgent"
+}
+[2025-06-10T14:10:40.259Z] info: Orchestrator processing task 1749564635241-r0tqjkhtm: EXECUTE_TRADING_STRATEGY
+{
+  "context": "OrchestratorAgent"
+}
+[2025-06-10T14:10:40.264Z] info: Executing trading strategy...
+{
+  "context": "OrchestratorAgent",
+  "market": "CRYPTO",
+  "riskLevel": "MEDIUM"
+}
+[2025-06-10T14:10:40.268Z] debug: Enqueuing task 1749564640265-e2nrxlce8 of type ANALYZE_MARKET
+{
+  "context": "AITradingAgent"
+}
+[2025-06-10T14:10:40.270Z] debug: Starting task 1749564640265-e2nrxlce8 of type ANALYZE_MARKET
+{
+  "context": "AITradingAgent"
+}
+[2025-06-10T14:10:40.272Z] info: Processing task 1749564640265-e2nrxlce8 of type ANALYZE_MARKET
+{
+  "context": "AITradingAgent"
+}
+[2025-06-10T14:10:40.274Z] debug: Analyzing market data
+{
+  "context": "AITradingAgent"
+}
+[2025-06-10T14:10:40.668Z] error: Error analyzing market: Converting circular structure to JSON
+    --> starting at object with constructor 'ClientRequest'
+    |     property 'res' -> object with constructor 'IncomingMessage'
+    --- property 'req' closes the circle
+{
+  "context": "AITradingAgent",
+  "stack": "TypeError: Converting circular structure to JSON\n    --> starting at object with constructor 'ClientRequest'\n    |     property 'res' -> object with constructor 'IncomingMessage'\n    --- property 'req' closes the circle\n    at JSON.stringify (<anonymous>)\n    at Printf.template (D:\\AI-HiveMind-Autonomous\\src\\utils\\logger.ts:10:59)\n    at Printf.transform (D:\\AI-HiveMind-Autonomous\\node_modules\\logform\\printf.js:11:26)\n    at Format.transform (D:\\AI-HiveMind-Autonomous\\node_modules\\logform\\combine.js:20:24)\n    at Console._write (D:\\AI-HiveMind-Autonomous\\node_modules\\winston-transport\\modern.js:91:33)\n    at doWrite (D:\\AI-HiveMind-Autonomous\\node_modules\\readable-stream\\lib\\_stream_writable.js:390:139)\n    at writeOrBuffer (D:\\AI-HiveMind-Autonomous\\node_modules\\readable-stream\\lib\\_stream_writable.js:381:5)\n    at Writable.write (D:\\AI-HiveMind-Autonomous\\node_modules\\readable-stream\\lib\\_stream_writable.js:302:11)\n    at DerivedLogger.ondata (D:\\AI-HiveMind-Autonomous\\node_modules\\readable-stream\\lib\\_stream_readable.js:629:20)\n    at DerivedLogger.emit (node:events:530:35)"
+}
+[2025-06-10T14:11:53.459Z] info: Agent initialized
+{
+  "context": "AITradingAgent"
+}
+[2025-06-10T14:11:53.460Z] info: Agent initialized
+{
+  "context": "OrchestratorAgent"
+}
+[2025-06-10T14:11:53.462Z] info: Agent initialized
+{
+  "context": "ResearchAgent"
+}
+[2025-06-10T14:11:53.463Z] info: Starting AI HiveMind Autonomous System...
+{
+  "context": "App"
+}
+[2025-06-10T14:11:53.464Z] info: Starting agent
+{
+  "context": "OrchestratorAgent"
+}
+[2025-06-10T14:11:53.465Z] info: Initializing Orchestrator Agent
+{
+  "context": "OrchestratorAgent"
+}
+[2025-06-10T14:11:53.465Z] info: Starting agent
+{
+  "context": "AITradingAgent"
+}
+[2025-06-10T14:11:53.466Z] info: Initializing AI Trading Agent
+{
+  "context": "AITradingAgent"
+}
+[2025-06-10T14:11:53.467Z] info: Starting agent
+{
+  "context": "ResearchAgent"
+}
+[2025-06-10T14:11:53.469Z] info: Initializing Research Agent
+{
+  "context": "ResearchAgent"
+}
+[2025-06-10T14:11:53.470Z] info: All agents started successfully.
+{
+  "context": "App"
+}
+[2025-06-10T14:11:53.472Z] debug: Enqueuing task 1749564713470-xwazpfh3q of type EXECUTE_TRADING_STRATEGY
+{
+  "context": "OrchestratorAgent"
+}
+[2025-06-10T14:11:58.479Z] debug: Starting task 1749564713470-xwazpfh3q of type EXECUTE_TRADING_STRATEGY
+{
+  "context": "OrchestratorAgent"
+}
+[2025-06-10T14:11:58.483Z] info: Orchestrator processing task 1749564713470-xwazpfh3q: EXECUTE_TRADING_STRATEGY
+{
+  "context": "OrchestratorAgent"
+}
+[2025-06-10T14:11:58.486Z] info: Executing trading strategy...
+{
+  "context": "OrchestratorAgent",
+  "market": "CRYPTO",
+  "riskLevel": "MEDIUM"
+}
+[2025-06-10T14:11:58.489Z] debug: Enqueuing task 1749564718487-ddz1335lf of type ANALYZE_MARKET
+{
+  "context": "AITradingAgent"
+}
+[2025-06-10T14:11:58.493Z] debug: Starting task 1749564718487-ddz1335lf of type ANALYZE_MARKET
+{
+  "context": "AITradingAgent"
+}
+[2025-06-10T14:11:58.497Z] info: Processing task 1749564718487-ddz1335lf of type ANALYZE_MARKET
+{
+  "context": "AITradingAgent"
+}
+[2025-06-10T14:11:58.500Z] debug: Analyzing market data
+{
+  "context": "AITradingAgent"
+}
+[2025-06-10T14:11:59.729Z] error: Error analyzing market: Converting circular structure to JSON
+    --> starting at object with constructor 'ClientRequest'
+    |     property 'res' -> object with constructor 'IncomingMessage'
+    --- property 'req' closes the circle
+{
+  "context": "AITradingAgent",
+  "stack": "TypeError: Converting circular structure to JSON\n    --> starting at object with constructor 'ClientRequest'\n    |     property 'res' -> object with constructor 'IncomingMessage'\n    --- property 'req' closes the circle\n    at JSON.stringify (<anonymous>)\n    at Printf.template (D:\\AI-HiveMind-Autonomous\\src\\utils\\logger.ts:10:59)\n    at Printf.transform (D:\\AI-HiveMind-Autonomous\\node_modules\\logform\\printf.js:11:26)\n    at Format.transform (D:\\AI-HiveMind-Autonomous\\node_modules\\logform\\combine.js:20:24)\n    at Console._write (D:\\AI-HiveMind-Autonomous\\node_modules\\winston-transport\\modern.js:91:33)\n    at doWrite (D:\\AI-HiveMind-Autonomous\\node_modules\\readable-stream\\lib\\_stream_writable.js:390:139)\n    at writeOrBuffer (D:\\AI-HiveMind-Autonomous\\node_modules\\readable-stream\\lib\\_stream_writable.js:381:5)\n    at Writable.write (D:\\AI-HiveMind-Autonomous\\node_modules\\readable-stream\\lib\\_stream_writable.js:302:11)\n    at DerivedLogger.ondata (D:\\AI-HiveMind-Autonomous\\node_modules\\readable-stream\\lib\\_stream_readable.js:629:20)\n    at DerivedLogger.emit (node:events:530:35)"
+}
+[2025-06-10T14:22:07.273Z] info: Agent initialized
+{
+  "context": "AITradingAgent"
+}
+[2025-06-10T14:22:07.275Z] info: Agent initialized
+{
+  "context": "OrchestratorAgent"
+}
+[2025-06-10T14:22:07.277Z] info: Agent initialized
+{
+  "context": "ResearchAgent"
+}
+[2025-06-10T14:22:07.278Z] info: Starting AI HiveMind Autonomous System...
+{
+  "context": "App"
+}
+[2025-06-10T14:22:07.279Z] info: Starting agent
+{
+  "context": "OrchestratorAgent"
+}
+[2025-06-10T14:22:07.280Z] info: Initializing Orchestrator Agent
+{
+  "context": "OrchestratorAgent"
+}
+[2025-06-10T14:22:07.280Z] info: Starting agent
+{
+  "context": "AITradingAgent"
+}
+[2025-06-10T14:22:07.281Z] info: Initializing AI Trading Agent
+{
+  "context": "AITradingAgent"
+}
+[2025-06-10T14:22:07.282Z] info: Starting agent
+{
+  "context": "ResearchAgent"
+}
+[2025-06-10T14:22:07.283Z] info: Initializing Research Agent
+{
+  "context": "ResearchAgent"
+}
+[2025-06-10T14:22:07.285Z] info: All agents started successfully.
+{
+  "context": "App"
+}
+[2025-06-10T14:22:07.286Z] debug: Enqueuing task 1749565327285-8qu9muv4f of type EXECUTE_TRADING_STRATEGY
+{
+  "context": "OrchestratorAgent"
+}
+[2025-06-10T14:22:07.392Z] debug: Processing task 1749565327285-8qu9muv4f: EXECUTE_TRADING_STRATEGY
+{
+  "context": "OrchestratorAgent"
+}
+[2025-06-10T14:22:07.400Z] info: Orchestrator processing task 1749565327285-8qu9muv4f: EXECUTE_TRADING_STRATEGY
+{
+  "context": "OrchestratorAgent"
+}
+[2025-06-10T14:22:07.405Z] info: Executing trading strategy...
+{
+  "context": "OrchestratorAgent",
+  "market": "CRYPTO",
+  "riskLevel": "MEDIUM"
+}
+[2025-06-10T14:22:07.409Z] debug: Enqueuing task 1749565327405-7tsdutfl9 of type ANALYZE_MARKET
+{
+  "context": "AITradingAgent"
+}
+[2025-06-10T14:22:07.413Z] debug: Processing task 1749565327405-7tsdutfl9: ANALYZE_MARKET
+{
+  "context": "AITradingAgent"
+}
+[2025-06-10T14:22:07.416Z] info: Processing task 1749565327405-7tsdutfl9 of type ANALYZE_MARKET
+{
+  "context": "AITradingAgent"
+}
+[2025-06-10T14:22:07.420Z] debug: Analyzing market data
+{
+  "context": "AITradingAgent"
+}
+[2025-06-10T14:22:08.518Z] error: Error analyzing market: Converting circular structure to JSON
+    --> starting at object with constructor 'ClientRequest'
+    |     property 'res' -> object with constructor 'IncomingMessage'
+    --- property 'req' closes the circle
+{
+  "context": "AITradingAgent",
+  "stack": "TypeError: Converting circular structure to JSON\n    --> starting at object with constructor 'ClientRequest'\n    |     property 'res' -> object with constructor 'IncomingMessage'\n    --- property 'req' closes the circle\n    at JSON.stringify (<anonymous>)\n    at Printf.template (D:\\AI-HiveMind-Autonomous\\src\\utils\\logger.ts:10:59)\n    at Printf.transform (D:\\AI-HiveMind-Autonomous\\node_modules\\logform\\printf.js:11:26)\n    at Format.transform (D:\\AI-HiveMind-Autonomous\\node_modules\\logform\\combine.js:20:24)\n    at Console._write (D:\\AI-HiveMind-Autonomous\\node_modules\\winston-transport\\modern.js:91:33)\n    at doWrite (D:\\AI-HiveMind-Autonomous\\node_modules\\readable-stream\\lib\\_stream_writable.js:390:139)\n    at writeOrBuffer (D:\\AI-HiveMind-Autonomous\\node_modules\\readable-stream\\lib\\_stream_writable.js:381:5)\n    at Writable.write (D:\\AI-HiveMind-Autonomous\\node_modules\\readable-stream\\lib\\_stream_writable.js:302:11)\n    at DerivedLogger.ondata (D:\\AI-HiveMind-Autonomous\\node_modules\\readable-stream\\lib\\_stream_readable.js:629:20)\n    at DerivedLogger.emit (node:events:530:35)"
+}
+[2025-06-10T14:22:08.522Z] error: Error processing task 1749565327405-7tsdutfl9: Converting circular structure to JSON
+    --> starting at object with constructor 'ClientRequest'
+    |     property 'res' -> object with constructor 'IncomingMessage'
+    --- property 'req' closes the circle
+{
+  "context": "AITradingAgent",
+  "stack": "TypeError: Converting circular structure to JSON\n    --> starting at object with constructor 'ClientRequest'\n    |     property 'res' -> object with constructor 'IncomingMessage'\n    --- property 'req' closes the circle\n    at JSON.stringify (<anonymous>)\n    at Printf.template (D:\\AI-HiveMind-Autonomous\\src\\utils\\logger.ts:10:59)\n    at Printf.transform (D:\\AI-HiveMind-Autonomous\\node_modules\\logform\\printf.js:11:26)\n    at Format.transform (D:\\AI-HiveMind-Autonomous\\node_modules\\logform\\combine.js:20:24)\n    at Console._write (D:\\AI-HiveMind-Autonomous\\node_modules\\winston-transport\\modern.js:91:33)\n    at doWrite (D:\\AI-HiveMind-Autonomous\\node_modules\\readable-stream\\lib\\_stream_writable.js:390:139)\n    at writeOrBuffer (D:\\AI-HiveMind-Autonomous\\node_modules\\readable-stream\\lib\\_stream_writable.js:381:5)\n    at Writable.write (D:\\AI-HiveMind-Autonomous\\node_modules\\readable-stream\\lib\\_stream_writable.js:302:11)\n    at DerivedLogger.ondata (D:\\AI-HiveMind-Autonomous\\node_modules\\readable-stream\\lib\\_stream_readable.js:629:20)\n    at DerivedLogger.emit (node:events:530:35)"
+}
+[2025-06-10T14:22:08.526Z] error: Error processing task 1749565327285-8qu9muv4f: Converting circular structure to JSON
+    --> starting at object with constructor 'ClientRequest'
+    |     property 'res' -> object with constructor 'IncomingMessage'
+    --- property 'req' closes the circle
+{
+  "context": "OrchestratorAgent",
+  "stack": "TypeError: Converting circular structure to JSON\n    --> starting at object with constructor 'ClientRequest'\n    |     property 'res' -> object with constructor 'IncomingMessage'\n    --- property 'req' closes the circle\n    at JSON.stringify (<anonymous>)\n    at Printf.template (D:\\AI-HiveMind-Autonomous\\src\\utils\\logger.ts:10:59)\n    at Printf.transform (D:\\AI-HiveMind-Autonomous\\node_modules\\logform\\printf.js:11:26)\n    at Format.transform (D:\\AI-HiveMind-Autonomous\\node_modules\\logform\\combine.js:20:24)\n    at Console._write (D:\\AI-HiveMind-Autonomous\\node_modules\\winston-transport\\modern.js:91:33)\n    at doWrite (D:\\AI-HiveMind-Autonomous\\node_modules\\readable-stream\\lib\\_stream_writable.js:390:139)\n    at writeOrBuffer (D:\\AI-HiveMind-Autonomous\\node_modules\\readable-stream\\lib\\_stream_writable.js:381:5)\n    at Writable.write (D:\\AI-HiveMind-Autonomous\\node_modules\\readable-stream\\lib\\_stream_writable.js:302:11)\n    at DerivedLogger.ondata (D:\\AI-HiveMind-Autonomous\\node_modules\\readable-stream\\lib\\_stream_readable.js:629:20)\n    at DerivedLogger.emit (node:events:530:35)"
+}
+[2025-06-10T14:22:08.529Z] error: Error executing trading strategy: Converting circular structure to JSON
+    --> starting at object with constructor 'ClientRequest'
+    |     property 'res' -> object with constructor 'IncomingMessage'
+    --- property 'req' closes the circle
+{
+  "context": "App",
+  "stack": "TypeError: Converting circular structure to JSON\n    --> starting at object with constructor 'ClientRequest'\n    |     property 'res' -> object with constructor 'IncomingMessage'\n    --- property 'req' closes the circle\n    at JSON.stringify (<anonymous>)\n    at Printf.template (D:\\AI-HiveMind-Autonomous\\src\\utils\\logger.ts:10:59)\n    at Printf.transform (D:\\AI-HiveMind-Autonomous\\node_modules\\logform\\printf.js:11:26)\n    at Format.transform (D:\\AI-HiveMind-Autonomous\\node_modules\\logform\\combine.js:20:24)\n    at Console._write (D:\\AI-HiveMind-Autonomous\\node_modules\\winston-transport\\modern.js:91:33)\n    at doWrite (D:\\AI-HiveMind-Autonomous\\node_modules\\readable-stream\\lib\\_stream_writable.js:390:139)\n    at writeOrBuffer (D:\\AI-HiveMind-Autonomous\\node_modules\\readable-stream\\lib\\_stream_writable.js:381:5)\n    at Writable.write (D:\\AI-HiveMind-Autonomous\\node_modules\\readable-stream\\lib\\_stream_writable.js:302:11)\n    at DerivedLogger.ondata (D:\\AI-HiveMind-Autonomous\\node_modules\\readable-stream\\lib\\_stream_readable.js:629:20)\n    at DerivedLogger.emit (node:events:530:35)"
+}
+[2025-06-10T14:22:33.693Z] info: Shutting down all agents...
+{
+  "context": "App"
+}
+[2025-06-10T14:22:36.538Z] info: Agent initialized
+{
+  "context": "AITradingAgent"
+}
+[2025-06-10T14:22:36.541Z] info: Agent initialized
+{
+  "context": "OrchestratorAgent"
+}
+[2025-06-10T14:22:36.543Z] info: Agent initialized
+{
+  "context": "ResearchAgent"
+}
+[2025-06-10T14:22:36.544Z] info: Starting AI HiveMind Autonomous System...
+{
+  "context": "App"
+}
+[2025-06-10T14:22:36.545Z] info: Starting agent
+{
+  "context": "OrchestratorAgent"
+}
+[2025-06-10T14:22:36.546Z] info: Initializing Orchestrator Agent
+{
+  "context": "OrchestratorAgent"
+}
+[2025-06-10T14:22:36.547Z] info: Starting agent
+{
+  "context": "AITradingAgent"
+}
+[2025-06-10T14:22:36.548Z] info: Initializing AI Trading Agent
+{
+  "context": "AITradingAgent"
+}
+[2025-06-10T14:22:36.549Z] info: Starting agent
+{
+  "context": "ResearchAgent"
+}
+[2025-06-10T14:22:36.551Z] info: Initializing Research Agent
+{
+  "context": "ResearchAgent"
+}
+[2025-06-10T14:22:36.553Z] info: All agents started successfully.
+{
+  "context": "App"
+}
+[2025-06-10T14:22:36.555Z] debug: Enqueuing task 1749565356554-mxl07xqri of type EXECUTE_TRADING_STRATEGY
+{
+  "context": "OrchestratorAgent"
+}
+[2025-06-10T14:22:36.656Z] debug: Processing task 1749565356554-mxl07xqri: EXECUTE_TRADING_STRATEGY
+{
+  "context": "OrchestratorAgent"
+}
+[2025-06-10T14:22:36.659Z] info: Orchestrator processing task 1749565356554-mxl07xqri: EXECUTE_TRADING_STRATEGY
+{
+  "context": "OrchestratorAgent"
+}
+[2025-06-10T14:22:36.661Z] info: Executing trading strategy...
+{
+  "context": "OrchestratorAgent",
+  "market": "CRYPTO",
+  "riskLevel": "MEDIUM"
+}
+[2025-06-10T14:22:36.662Z] debug: Enqueuing task 1749565356661-rg9n83drd of type ANALYZE_MARKET
+{
+  "context": "AITradingAgent"
+}
+[2025-06-10T14:22:36.664Z] debug: Processing task 1749565356661-rg9n83drd: ANALYZE_MARKET
+{
+  "context": "AITradingAgent"
+}
+[2025-06-10T14:22:36.665Z] info: Processing task 1749565356661-rg9n83drd of type ANALYZE_MARKET
+{
+  "context": "AITradingAgent"
+}
+[2025-06-10T14:22:36.666Z] debug: Analyzing market data
+{
+  "context": "AITradingAgent"
+}
+[2025-06-10T14:22:37.490Z] error: Error analyzing market: Converting circular structure to JSON
+    --> starting at object with constructor 'ClientRequest'
+    |     property 'res' -> object with constructor 'IncomingMessage'
+    --- property 'req' closes the circle
+{
+  "context": "AITradingAgent",
+  "stack": "TypeError: Converting circular structure to JSON\n    --> starting at object with constructor 'ClientRequest'\n    |     property 'res' -> object with constructor 'IncomingMessage'\n    --- property 'req' closes the circle\n    at JSON.stringify (<anonymous>)\n    at Printf.template (D:\\AI-HiveMind-Autonomous\\src\\utils\\logger.ts:10:59)\n    at Printf.transform (D:\\AI-HiveMind-Autonomous\\node_modules\\logform\\printf.js:11:26)\n    at Format.transform (D:\\AI-HiveMind-Autonomous\\node_modules\\logform\\combine.js:20:24)\n    at Console._write (D:\\AI-HiveMind-Autonomous\\node_modules\\winston-transport\\modern.js:91:33)\n    at doWrite (D:\\AI-HiveMind-Autonomous\\node_modules\\readable-stream\\lib\\_stream_writable.js:390:139)\n    at writeOrBuffer (D:\\AI-HiveMind-Autonomous\\node_modules\\readable-stream\\lib\\_stream_writable.js:381:5)\n    at Writable.write (D:\\AI-HiveMind-Autonomous\\node_modules\\readable-stream\\lib\\_stream_writable.js:302:11)\n    at DerivedLogger.ondata (D:\\AI-HiveMind-Autonomous\\node_modules\\readable-stream\\lib\\_stream_readable.js:629:20)\n    at DerivedLogger.emit (node:events:530:35)"
+}
+[2025-06-10T14:22:37.496Z] error: Error processing task 1749565356661-rg9n83drd: Converting circular structure to JSON
+    --> starting at object with constructor 'ClientRequest'
+    |     property 'res' -> object with constructor 'IncomingMessage'
+    --- property 'req' closes the circle
+{
+  "context": "AITradingAgent",
+  "stack": "TypeError: Converting circular structure to JSON\n    --> starting at object with constructor 'ClientRequest'\n    |     property 'res' -> object with constructor 'IncomingMessage'\n    --- property 'req' closes the circle\n    at JSON.stringify (<anonymous>)\n    at Printf.template (D:\\AI-HiveMind-Autonomous\\src\\utils\\logger.ts:10:59)\n    at Printf.transform (D:\\AI-HiveMind-Autonomous\\node_modules\\logform\\printf.js:11:26)\n    at Format.transform (D:\\AI-HiveMind-Autonomous\\node_modules\\logform\\combine.js:20:24)\n    at Console._write (D:\\AI-HiveMind-Autonomous\\node_modules\\winston-transport\\modern.js:91:33)\n    at doWrite (D:\\AI-HiveMind-Autonomous\\node_modules\\readable-stream\\lib\\_stream_writable.js:390:139)\n    at writeOrBuffer (D:\\AI-HiveMind-Autonomous\\node_modules\\readable-stream\\lib\\_stream_writable.js:381:5)\n    at Writable.write (D:\\AI-HiveMind-Autonomous\\node_modules\\readable-stream\\lib\\_stream_writable.js:302:11)\n    at DerivedLogger.ondata (D:\\AI-HiveMind-Autonomous\\node_modules\\readable-stream\\lib\\_stream_readable.js:629:20)\n    at DerivedLogger.emit (node:events:530:35)"
+}
+[2025-06-10T14:22:37.501Z] error: Error processing task 1749565356554-mxl07xqri: Converting circular structure to JSON
+    --> starting at object with constructor 'ClientRequest'
+    |     property 'res' -> object with constructor 'IncomingMessage'
+    --- property 'req' closes the circle
+{
+  "context": "OrchestratorAgent",
+  "stack": "TypeError: Converting circular structure to JSON\n    --> starting at object with constructor 'ClientRequest'\n    |     property 'res' -> object with constructor 'IncomingMessage'\n    --- property 'req' closes the circle\n    at JSON.stringify (<anonymous>)\n    at Printf.template (D:\\AI-HiveMind-Autonomous\\src\\utils\\logger.ts:10:59)\n    at Printf.transform (D:\\AI-HiveMind-Autonomous\\node_modules\\logform\\printf.js:11:26)\n    at Format.transform (D:\\AI-HiveMind-Autonomous\\node_modules\\logform\\combine.js:20:24)\n    at Console._write (D:\\AI-HiveMind-Autonomous\\node_modules\\winston-transport\\modern.js:91:33)\n    at doWrite (D:\\AI-HiveMind-Autonomous\\node_modules\\readable-stream\\lib\\_stream_writable.js:390:139)\n    at writeOrBuffer (D:\\AI-HiveMind-Autonomous\\node_modules\\readable-stream\\lib\\_stream_writable.js:381:5)\n    at Writable.write (D:\\AI-HiveMind-Autonomous\\node_modules\\readable-stream\\lib\\_stream_writable.js:302:11)\n    at DerivedLogger.ondata (D:\\AI-HiveMind-Autonomous\\node_modules\\readable-stream\\lib\\_stream_readable.js:629:20)\n    at DerivedLogger.emit (node:events:530:35)"
+}
+[2025-06-10T14:22:37.505Z] error: Error executing trading strategy: Converting circular structure to JSON
+    --> starting at object with constructor 'ClientRequest'
+    |     property 'res' -> object with constructor 'IncomingMessage'
+    --- property 'req' closes the circle
+{
+  "context": "App",
+  "stack": "TypeError: Converting circular structure to JSON\n    --> starting at object with constructor 'ClientRequest'\n    |     property 'res' -> object with constructor 'IncomingMessage'\n    --- property 'req' closes the circle\n    at JSON.stringify (<anonymous>)\n    at Printf.template (D:\\AI-HiveMind-Autonomous\\src\\utils\\logger.ts:10:59)\n    at Printf.transform (D:\\AI-HiveMind-Autonomous\\node_modules\\logform\\printf.js:11:26)\n    at Format.transform (D:\\AI-HiveMind-Autonomous\\node_modules\\logform\\combine.js:20:24)\n    at Console._write (D:\\AI-HiveMind-Autonomous\\node_modules\\winston-transport\\modern.js:91:33)\n    at doWrite (D:\\AI-HiveMind-Autonomous\\node_modules\\readable-stream\\lib\\_stream_writable.js:390:139)\n    at writeOrBuffer (D:\\AI-HiveMind-Autonomous\\node_modules\\readable-stream\\lib\\_stream_writable.js:381:5)\n    at Writable.write (D:\\AI-HiveMind-Autonomous\\node_modules\\readable-stream\\lib\\_stream_writable.js:302:11)\n    at DerivedLogger.ondata (D:\\AI-HiveMind-Autonomous\\node_modules\\readable-stream\\lib\\_stream_readable.js:629:20)\n    at DerivedLogger.emit (node:events:530:35)"
+}
+[2025-06-10T14:23:14.991Z] info: Shutting down all agents...
+{
+  "context": "App"
+}
+[2025-06-10T14:23:17.723Z] info: Agent initialized
+{
+  "context": "AITradingAgent"
+}
+[2025-06-10T14:23:17.725Z] info: Agent initialized
+{
+  "context": "OrchestratorAgent"
+}
+[2025-06-10T14:23:17.727Z] info: Agent initialized
+{
+  "context": "ResearchAgent"
+}
+[2025-06-10T14:23:17.727Z] info: Starting AI HiveMind Autonomous System...
+{
+  "context": "App"
+}
+[2025-06-10T14:23:17.729Z] info: Starting agent
+{
+  "context": "OrchestratorAgent"
+}
+[2025-06-10T14:23:17.730Z] info: Initializing Orchestrator Agent
+{
+  "context": "OrchestratorAgent"
+}
+[2025-06-10T14:23:17.730Z] info: Starting agent
+{
+  "context": "AITradingAgent"
+}
+[2025-06-10T14:23:17.731Z] info: Initializing AI Trading Agent
+{
+  "context": "AITradingAgent"
+}
+[2025-06-10T14:23:17.732Z] info: Starting agent
+{
+  "context": "ResearchAgent"
+}
+[2025-06-10T14:23:17.733Z] info: Initializing Research Agent
+{
+  "context": "ResearchAgent"
+}
+[2025-06-10T14:23:17.734Z] info: All agents started successfully.
+{
+  "context": "App"
+}
+[2025-06-10T14:23:17.736Z] debug: Enqueuing task 1749565397735-pox5j9o16 of type EXECUTE_TRADING_STRATEGY
+{
+  "context": "OrchestratorAgent"
+}
+[2025-06-10T14:23:17.842Z] debug: Processing task 1749565397735-pox5j9o16: EXECUTE_TRADING_STRATEGY
+{
+  "context": "OrchestratorAgent"
+}
+[2025-06-10T14:23:17.845Z] info: Orchestrator processing task 1749565397735-pox5j9o16: EXECUTE_TRADING_STRATEGY
+{
+  "context": "OrchestratorAgent"
+}
+[2025-06-10T14:23:17.850Z] info: Executing trading strategy...
+{
+  "context": "OrchestratorAgent",
+  "market": "CRYPTO",
+  "riskLevel": "MEDIUM"
+}
+[2025-06-10T14:23:17.853Z] debug: Enqueuing task 1749565397851-f6nvv05a7 of type ANALYZE_MARKET
+{
+  "context": "AITradingAgent"
+}
+[2025-06-10T14:23:17.856Z] debug: Processing task 1749565397851-f6nvv05a7: ANALYZE_MARKET
+{
+  "context": "AITradingAgent"
+}
+[2025-06-10T14:23:17.859Z] info: Processing task 1749565397851-f6nvv05a7 of type ANALYZE_MARKET
+{
+  "context": "AITradingAgent"
+}
+[2025-06-10T14:23:17.861Z] debug: Analyzing market data
+{
+  "context": "AITradingAgent"
+}
+[2025-06-10T14:23:18.611Z] error: Error analyzing market: Converting circular structure to JSON
+    --> starting at object with constructor 'ClientRequest'
+    |     property 'res' -> object with constructor 'IncomingMessage'
+    --- property 'req' closes the circle
+{
+  "context": "AITradingAgent",
+  "stack": "TypeError: Converting circular structure to JSON\n    --> starting at object with constructor 'ClientRequest'\n    |     property 'res' -> object with constructor 'IncomingMessage'\n    --- property 'req' closes the circle\n    at JSON.stringify (<anonymous>)\n    at Printf.template (D:\\AI-HiveMind-Autonomous\\src\\utils\\logger.ts:10:59)\n    at Printf.transform (D:\\AI-HiveMind-Autonomous\\node_modules\\logform\\printf.js:11:26)\n    at Format.transform (D:\\AI-HiveMind-Autonomous\\node_modules\\logform\\combine.js:20:24)\n    at Console._write (D:\\AI-HiveMind-Autonomous\\node_modules\\winston-transport\\modern.js:91:33)\n    at doWrite (D:\\AI-HiveMind-Autonomous\\node_modules\\readable-stream\\lib\\_stream_writable.js:390:139)\n    at writeOrBuffer (D:\\AI-HiveMind-Autonomous\\node_modules\\readable-stream\\lib\\_stream_writable.js:381:5)\n    at Writable.write (D:\\AI-HiveMind-Autonomous\\node_modules\\readable-stream\\lib\\_stream_writable.js:302:11)\n    at DerivedLogger.ondata (D:\\AI-HiveMind-Autonomous\\node_modules\\readable-stream\\lib\\_stream_readable.js:629:20)\n    at DerivedLogger.emit (node:events:530:35)"
+}
+[2025-06-10T14:23:18.617Z] error: Error processing task 1749565397851-f6nvv05a7: Converting circular structure to JSON
+    --> starting at object with constructor 'ClientRequest'
+    |     property 'res' -> object with constructor 'IncomingMessage'
+    --- property 'req' closes the circle
+{
+  "context": "AITradingAgent",
+  "stack": "TypeError: Converting circular structure to JSON\n    --> starting at object with constructor 'ClientRequest'\n    |     property 'res' -> object with constructor 'IncomingMessage'\n    --- property 'req' closes the circle\n    at JSON.stringify (<anonymous>)\n    at Printf.template (D:\\AI-HiveMind-Autonomous\\src\\utils\\logger.ts:10:59)\n    at Printf.transform (D:\\AI-HiveMind-Autonomous\\node_modules\\logform\\printf.js:11:26)\n    at Format.transform (D:\\AI-HiveMind-Autonomous\\node_modules\\logform\\combine.js:20:24)\n    at Console._write (D:\\AI-HiveMind-Autonomous\\node_modules\\winston-transport\\modern.js:91:33)\n    at doWrite (D:\\AI-HiveMind-Autonomous\\node_modules\\readable-stream\\lib\\_stream_writable.js:390:139)\n    at writeOrBuffer (D:\\AI-HiveMind-Autonomous\\node_modules\\readable-stream\\lib\\_stream_writable.js:381:5)\n    at Writable.write (D:\\AI-HiveMind-Autonomous\\node_modules\\readable-stream\\lib\\_stream_writable.js:302:11)\n    at DerivedLogger.ondata (D:\\AI-HiveMind-Autonomous\\node_modules\\readable-stream\\lib\\_stream_readable.js:629:20)\n    at DerivedLogger.emit (node:events:530:35)"
+}
+[2025-06-10T14:23:18.623Z] error: Error processing task 1749565397735-pox5j9o16: Converting circular structure to JSON
+    --> starting at object with constructor 'ClientRequest'
+    |     property 'res' -> object with constructor 'IncomingMessage'
+    --- property 'req' closes the circle
+{
+  "context": "OrchestratorAgent",
+  "stack": "TypeError: Converting circular structure to JSON\n    --> starting at object with constructor 'ClientRequest'\n    |     property 'res' -> object with constructor 'IncomingMessage'\n    --- property 'req' closes the circle\n    at JSON.stringify (<anonymous>)\n    at Printf.template (D:\\AI-HiveMind-Autonomous\\src\\utils\\logger.ts:10:59)\n    at Printf.transform (D:\\AI-HiveMind-Autonomous\\node_modules\\logform\\printf.js:11:26)\n    at Format.transform (D:\\AI-HiveMind-Autonomous\\node_modules\\logform\\combine.js:20:24)\n    at Console._write (D:\\AI-HiveMind-Autonomous\\node_modules\\winston-transport\\modern.js:91:33)\n    at doWrite (D:\\AI-HiveMind-Autonomous\\node_modules\\readable-stream\\lib\\_stream_writable.js:390:139)\n    at writeOrBuffer (D:\\AI-HiveMind-Autonomous\\node_modules\\readable-stream\\lib\\_stream_writable.js:381:5)\n    at Writable.write (D:\\AI-HiveMind-Autonomous\\node_modules\\readable-stream\\lib\\_stream_writable.js:302:11)\n    at DerivedLogger.ondata (D:\\AI-HiveMind-Autonomous\\node_modules\\readable-stream\\lib\\_stream_readable.js:629:20)\n    at DerivedLogger.emit (node:events:530:35)"
+}
+[2025-06-10T14:23:18.628Z] error: Error executing trading strategy: Converting circular structure to JSON
+    --> starting at object with constructor 'ClientRequest'
+    |     property 'res' -> object with constructor 'IncomingMessage'
+    --- property 'req' closes the circle
+{
+  "context": "App",
+  "stack": "TypeError: Converting circular structure to JSON\n    --> starting at object with constructor 'ClientRequest'\n    |     property 'res' -> object with constructor 'IncomingMessage'\n    --- property 'req' closes the circle\n    at JSON.stringify (<anonymous>)\n    at Printf.template (D:\\AI-HiveMind-Autonomous\\src\\utils\\logger.ts:10:59)\n    at Printf.transform (D:\\AI-HiveMind-Autonomous\\node_modules\\logform\\printf.js:11:26)\n    at Format.transform (D:\\AI-HiveMind-Autonomous\\node_modules\\logform\\combine.js:20:24)\n    at Console._write (D:\\AI-HiveMind-Autonomous\\node_modules\\winston-transport\\modern.js:91:33)\n    at doWrite (D:\\AI-HiveMind-Autonomous\\node_modules\\readable-stream\\lib\\_stream_writable.js:390:139)\n    at writeOrBuffer (D:\\AI-HiveMind-Autonomous\\node_modules\\readable-stream\\lib\\_stream_writable.js:381:5)\n    at Writable.write (D:\\AI-HiveMind-Autonomous\\node_modules\\readable-stream\\lib\\_stream_writable.js:302:11)\n    at DerivedLogger.ondata (D:\\AI-HiveMind-Autonomous\\node_modules\\readable-stream\\lib\\_stream_readable.js:629:20)\n    at DerivedLogger.emit (node:events:530:35)"
+}
+[2025-06-10T14:24:26.482Z] info: Shutting down all agents...
+{
+  "context": "App"
+}
+[2025-06-10T14:24:28.979Z] info: Agent initialized
+{
+  "context": "AITradingAgent"
+}
+[2025-06-10T14:24:28.981Z] info: Agent initialized
+{
+  "context": "OrchestratorAgent"
+}
+[2025-06-10T14:24:28.983Z] info: Agent initialized
+{
+  "context": "ResearchAgent"
+}
+[2025-06-10T14:24:28.984Z] info: Starting AI HiveMind Autonomous System...
+{
+  "context": "App"
+}
+[2025-06-10T14:24:28.985Z] info: Starting agent
+{
+  "context": "OrchestratorAgent"
+}
+[2025-06-10T14:24:28.986Z] info: Initializing Orchestrator Agent
+{
+  "context": "OrchestratorAgent"
+}
+[2025-06-10T14:24:28.987Z] info: Starting agent
+{
+  "context": "AITradingAgent"
+}
+[2025-06-10T14:24:28.988Z] info: Initializing AI Trading Agent
+{
+  "context": "AITradingAgent"
+}
+[2025-06-10T14:24:28.989Z] info: Starting agent
+{
+  "context": "ResearchAgent"
+}
+[2025-06-10T14:24:28.990Z] info: Initializing Research Agent
+{
+  "context": "ResearchAgent"
+}
+[2025-06-10T14:24:28.991Z] info: All agents started successfully.
+{
+  "context": "App"
+}
+[2025-06-10T14:24:28.993Z] debug: Enqueuing task 1749565468992-7vwglmmw0 of type EXECUTE_TRADING_STRATEGY
+{
+  "context": "OrchestratorAgent"
+}
+[2025-06-10T14:24:29.105Z] debug: Processing task 1749565468992-7vwglmmw0: EXECUTE_TRADING_STRATEGY
+{
+  "context": "OrchestratorAgent"
+}
+[2025-06-10T14:24:29.109Z] info: Orchestrator processing task 1749565468992-7vwglmmw0: EXECUTE_TRADING_STRATEGY
+{
+  "context": "OrchestratorAgent"
+}
+[2025-06-10T14:24:29.112Z] info: Executing trading strategy...
+{
+  "context": "OrchestratorAgent",
+  "market": "CRYPTO",
+  "riskLevel": "MEDIUM"
+}
+[2025-06-10T14:24:29.114Z] debug: Enqueuing task 1749565469112-vutx1yt2a of type ANALYZE_MARKET
+{
+  "context": "AITradingAgent"
+}
+[2025-06-10T14:24:29.115Z] debug: Processing task 1749565469112-vutx1yt2a: ANALYZE_MARKET
+{
+  "context": "AITradingAgent"
+}
+[2025-06-10T14:24:29.117Z] info: Processing task 1749565469112-vutx1yt2a of type ANALYZE_MARKET
+{
+  "context": "AITradingAgent"
+}
+[2025-06-10T14:24:29.119Z] debug: Analyzing market data
+{
+  "context": "AITradingAgent"
+}
+[2025-06-10T14:24:29.925Z] error: Error analyzing market: Converting circular structure to JSON
+    --> starting at object with constructor 'ClientRequest'
+    |     property 'res' -> object with constructor 'IncomingMessage'
+    --- property 'req' closes the circle
+{
+  "context": "AITradingAgent",
+  "stack": "TypeError: Converting circular structure to JSON\n    --> starting at object with constructor 'ClientRequest'\n    |     property 'res' -> object with constructor 'IncomingMessage'\n    --- property 'req' closes the circle\n    at JSON.stringify (<anonymous>)\n    at Printf.template (D:\\AI-HiveMind-Autonomous\\src\\utils\\logger.ts:10:59)\n    at Printf.transform (D:\\AI-HiveMind-Autonomous\\node_modules\\logform\\printf.js:11:26)\n    at Format.transform (D:\\AI-HiveMind-Autonomous\\node_modules\\logform\\combine.js:20:24)\n    at Console._write (D:\\AI-HiveMind-Autonomous\\node_modules\\winston-transport\\modern.js:91:33)\n    at doWrite (D:\\AI-HiveMind-Autonomous\\node_modules\\readable-stream\\lib\\_stream_writable.js:390:139)\n    at writeOrBuffer (D:\\AI-HiveMind-Autonomous\\node_modules\\readable-stream\\lib\\_stream_writable.js:381:5)\n    at Writable.write (D:\\AI-HiveMind-Autonomous\\node_modules\\readable-stream\\lib\\_stream_writable.js:302:11)\n    at DerivedLogger.ondata (D:\\AI-HiveMind-Autonomous\\node_modules\\readable-stream\\lib\\_stream_readable.js:629:20)\n    at DerivedLogger.emit (node:events:530:35)"
+}
+[2025-06-10T14:25:23.361Z] info: Agent initialized
+{
+  "context": "AITradingAgent"
+}
+[2025-06-10T14:25:23.362Z] info: Agent initialized
+{
+  "context": "OrchestratorAgent"
+}
+[2025-06-10T14:25:23.364Z] info: Agent initialized
+{
+  "context": "ResearchAgent"
+}
+[2025-06-10T14:25:23.365Z] info: Starting AI HiveMind Autonomous System...
+{
+  "context": "App"
+}
+[2025-06-10T14:25:23.365Z] info: Starting agent
+{
+  "context": "OrchestratorAgent"
+}
+[2025-06-10T14:25:23.366Z] info: Initializing Orchestrator Agent
+{
+  "context": "OrchestratorAgent"
+}
+[2025-06-10T14:25:23.367Z] info: Starting agent
+{
+  "context": "AITradingAgent"
+}
+[2025-06-10T14:25:23.368Z] info: Initializing AI Trading Agent
+{
+  "context": "AITradingAgent"
+}
+[2025-06-10T14:25:23.369Z] info: Starting agent
+{
+  "context": "ResearchAgent"
+}
+[2025-06-10T14:25:23.370Z] info: Initializing Research Agent
+{
+  "context": "ResearchAgent"
+}
+[2025-06-10T14:25:23.371Z] info: All agents started successfully.
+{
+  "context": "App"
+}
+[2025-06-10T14:25:23.372Z] debug: Enqueuing task 1749565523371-xdsiotltw of type EXECUTE_TRADING_STRATEGY
+{
+  "context": "OrchestratorAgent"
+}
+[2025-06-10T14:25:23.487Z] debug: Processing task 1749565523371-xdsiotltw: EXECUTE_TRADING_STRATEGY
+{
+  "context": "OrchestratorAgent"
+}
+[2025-06-10T14:25:23.491Z] info: Orchestrator processing task 1749565523371-xdsiotltw: EXECUTE_TRADING_STRATEGY
+{
+  "context": "OrchestratorAgent"
+}
+[2025-06-10T14:25:23.495Z] info: Executing trading strategy...
+{
+  "context": "OrchestratorAgent",
+  "market": "CRYPTO",
+  "riskLevel": "MEDIUM"
+}
+[2025-06-10T14:25:23.497Z] debug: Enqueuing task 1749565523495-xavzv05w0 of type ANALYZE_MARKET
+{
+  "context": "AITradingAgent"
+}
+[2025-06-10T14:25:23.500Z] debug: Processing task 1749565523495-xavzv05w0: ANALYZE_MARKET
+{
+  "context": "AITradingAgent"
+}
+[2025-06-10T14:25:23.502Z] info: Processing task 1749565523495-xavzv05w0 of type ANALYZE_MARKET
+{
+  "context": "AITradingAgent"
+}
+[2025-06-10T14:25:23.504Z] debug: Analyzing market data
+{
+  "context": "AITradingAgent"
+}
+[2025-06-10T14:25:24.434Z] error: Error analyzing market: Converting circular structure to JSON
+    --> starting at object with constructor 'ClientRequest'
+    |     property 'res' -> object with constructor 'IncomingMessage'
+    --- property 'req' closes the circle
+{
+  "context": "AITradingAgent",
+  "stack": "TypeError: Converting circular structure to JSON\n    --> starting at object with constructor 'ClientRequest'\n    |     property 'res' -> object with constructor 'IncomingMessage'\n    --- property 'req' closes the circle\n    at JSON.stringify (<anonymous>)\n    at Printf.template (D:\\AI-HiveMind-Autonomous\\src\\utils\\logger.ts:10:59)\n    at Printf.transform (D:\\AI-HiveMind-Autonomous\\node_modules\\logform\\printf.js:11:26)\n    at Format.transform (D:\\AI-HiveMind-Autonomous\\node_modules\\logform\\combine.js:20:24)\n    at Console._write (D:\\AI-HiveMind-Autonomous\\node_modules\\winston-transport\\modern.js:91:33)\n    at doWrite (D:\\AI-HiveMind-Autonomous\\node_modules\\readable-stream\\lib\\_stream_writable.js:390:139)\n    at writeOrBuffer (D:\\AI-HiveMind-Autonomous\\node_modules\\readable-stream\\lib\\_stream_writable.js:381:5)\n    at Writable.write (D:\\AI-HiveMind-Autonomous\\node_modules\\readable-stream\\lib\\_stream_writable.js:302:11)\n    at DerivedLogger.ondata (D:\\AI-HiveMind-Autonomous\\node_modules\\readable-stream\\lib\\_stream_readable.js:629:20)\n    at DerivedLogger.emit (node:events:530:35)"
+}
+[2025-06-10T14:28:12.053Z] info: Agent initialized
+{
+  "context": "AITradingAgent"
+}
+[2025-06-10T14:28:12.055Z] info: Agent initialized
+{
+  "context": "OrchestratorAgent"
+}
+[2025-06-10T14:28:12.057Z] info: Agent initialized
+{
+  "context": "ResearchAgent"
+}
+[2025-06-10T14:28:12.058Z] info: Starting AI HiveMind Autonomous System...
+{
+  "context": "App"
+}
+[2025-06-10T14:28:12.058Z] info: Starting agent
+{
+  "context": "OrchestratorAgent"
+}
+[2025-06-10T14:28:12.059Z] info: Initializing Orchestrator Agent
+{
+  "context": "OrchestratorAgent"
+}
+[2025-06-10T14:28:12.060Z] info: Starting agent
+{
+  "context": "AITradingAgent"
+}
+[2025-06-10T14:28:12.061Z] info: Initializing AI Trading Agent
+{
+  "context": "AITradingAgent"
+}
+[2025-06-10T14:28:12.062Z] info: Starting agent
+{
+  "context": "ResearchAgent"
+}
+[2025-06-10T14:28:12.064Z] info: Initializing Research Agent
+{
+  "context": "ResearchAgent"
+}
+[2025-06-10T14:28:12.065Z] info: All agents started successfully.
+{
+  "context": "App"
+}
+[2025-06-10T14:28:12.067Z] debug: Enqueuing task 1749565692066-uag4elhvu of type EXECUTE_TRADING_STRATEGY
+{
+  "context": "OrchestratorAgent"
+}
+[2025-06-10T14:28:12.171Z] debug: Processing task 1749565692066-uag4elhvu: EXECUTE_TRADING_STRATEGY
+{
+  "context": "OrchestratorAgent"
+}
+[2025-06-10T14:28:12.174Z] info: Orchestrator processing task 1749565692066-uag4elhvu: EXECUTE_TRADING_STRATEGY
+{
+  "context": "OrchestratorAgent"
+}
+[2025-06-10T14:28:12.178Z] info: Executing trading strategy...
+{
+  "context": "OrchestratorAgent",
+  "market": "CRYPTO",
+  "riskLevel": "MEDIUM"
+}
+[2025-06-10T14:28:12.179Z] debug: Enqueuing task 1749565692178-72w6b37w0 of type ANALYZE_MARKET
+{
+  "context": "AITradingAgent"
+}
+[2025-06-10T14:28:12.182Z] debug: Processing task 1749565692178-72w6b37w0: ANALYZE_MARKET
+{
+  "context": "AITradingAgent"
+}
+[2025-06-10T14:28:12.187Z] info: Processing task 1749565692178-72w6b37w0 of type ANALYZE_MARKET
+{
+  "context": "AITradingAgent"
+}
+[2025-06-10T14:28:12.192Z] debug: Analyzing market data
+{
+  "context": "AITradingAgent"
+}
+[2025-06-10T14:28:13.128Z] error: Error analyzing market: Converting circular structure to JSON
+    --> starting at object with constructor 'ClientRequest'
+    |     property 'res' -> object with constructor 'IncomingMessage'
+    --- property 'req' closes the circle
+{
+  "context": "AITradingAgent",
+  "stack": "TypeError: Converting circular structure to JSON\n    --> starting at object with constructor 'ClientRequest'\n    |     property 'res' -> object with constructor 'IncomingMessage'\n    --- property 'req' closes the circle\n    at JSON.stringify (<anonymous>)\n    at Printf.template (D:\\AI-HiveMind-Autonomous\\src\\utils\\logger.ts:10:59)\n    at Printf.transform (D:\\AI-HiveMind-Autonomous\\node_modules\\logform\\printf.js:11:26)\n    at Format.transform (D:\\AI-HiveMind-Autonomous\\node_modules\\logform\\combine.js:20:24)\n    at Console._write (D:\\AI-HiveMind-Autonomous\\node_modules\\winston-transport\\modern.js:91:33)\n    at doWrite (D:\\AI-HiveMind-Autonomous\\node_modules\\readable-stream\\lib\\_stream_writable.js:390:139)\n    at writeOrBuffer (D:\\AI-HiveMind-Autonomous\\node_modules\\readable-stream\\lib\\_stream_writable.js:381:5)\n    at Writable.write (D:\\AI-HiveMind-Autonomous\\node_modules\\readable-stream\\lib\\_stream_writable.js:302:11)\n    at DerivedLogger.ondata (D:\\AI-HiveMind-Autonomous\\node_modules\\readable-stream\\lib\\_stream_readable.js:629:20)\n    at DerivedLogger.emit (node:events:530:35)"
+}
+[2025-06-10T14:34:41.984Z] info: Agent initialized
+{
+  "context": "AITradingAgent"
+}
+[2025-06-10T14:34:41.986Z] info: Agent initialized
+{
+  "context": "OrchestratorAgent"
+}
+[2025-06-10T14:34:41.987Z] info: Agent initialized
+{
+  "context": "ResearchAgent"
+}
+[2025-06-10T14:34:41.988Z] info: Starting AI HiveMind Autonomous System...
+{
+  "context": "App"
+}
+[2025-06-10T14:34:41.988Z] info: Starting agent
+{
+  "context": "OrchestratorAgent"
+}
+[2025-06-10T14:34:41.989Z] info: Initializing Orchestrator Agent
+{
+  "context": "OrchestratorAgent"
+}
+[2025-06-10T14:34:41.990Z] info: Starting agent
+{
+  "context": "AITradingAgent"
+}
+[2025-06-10T14:34:41.991Z] info: Initializing AI Trading Agent
+{
+  "context": "AITradingAgent"
+}
+[2025-06-10T14:34:41.992Z] info: Starting agent
+{
+  "context": "ResearchAgent"
+}
+[2025-06-10T14:34:41.992Z] info: Initializing Research Agent
+{
+  "context": "ResearchAgent"
+}
+[2025-06-10T14:34:41.994Z] info: All agents started successfully.
+{
+  "context": "App"
+}
+[2025-06-10T14:34:41.995Z] debug: Enqueuing task 1749566081994-0sks6174x of type EXECUTE_TRADING_STRATEGY
+{
+  "context": "OrchestratorAgent"
+}
+[2025-06-10T14:34:42.110Z] debug: Starting task 1749566081994-0sks6174x: EXECUTE_TRADING_STRATEGY
+{
+  "context": "OrchestratorAgent",
+  "task": {
+    "type": "EXECUTE_TRADING_STRATEGY",
+    "data": {
+      "market": "CRYPTO",
+      "riskLevel": "MEDIUM"
+    },
+    "id": "1749566081994-0sks6174x",
+    "createdAt": "2025-06-10T14:34:41.994Z",
+    "priority": 0
+  }
+}
+[2025-06-10T14:34:42.115Z] info: Orchestrator processing task 1749566081994-0sks6174x: EXECUTE_TRADING_STRATEGY
+{
+  "context": "OrchestratorAgent"
+}
+[2025-06-10T14:34:42.120Z] info: Starting trading strategy execution
+{
+  "context": "OrchestratorAgent",
+  "market": "CRYPTO",
+  "riskLevel": "MEDIUM"
+}
+[2025-06-10T14:34:42.123Z] debug: Enqueuing market analysis task
+{
+  "context": "OrchestratorAgent"
+}
+[2025-06-10T14:34:42.127Z] debug: Enqueuing task 1749566082124-luecvlk0r of type ANALYZE_MARKET
+{
+  "context": "AITradingAgent"
+}
+[2025-06-10T14:34:42.134Z] debug: Starting task 1749566082124-luecvlk0r: ANALYZE_MARKET
+{
+  "context": "AITradingAgent",
+  "task": {
+    "type": "ANALYZE_MARKET",
+    "data": {
+      "market": "CRYPTO"
+    },
+    "id": "1749566082124-luecvlk0r",
+    "createdAt": "2025-06-10T14:34:42.124Z",
+    "priority": 0
+  }
+}
+[2025-06-10T14:34:42.137Z] info: Processing task 1749566082124-luecvlk0r of type ANALYZE_MARKET
+{
+  "context": "AITradingAgent"
+}
+[2025-06-10T14:34:42.140Z] debug: Analyzing market data
+{
+  "context": "AITradingAgent"
+}
+[2025-06-10T14:34:43.175Z] error: Error analyzing market: Converting circular structure to JSON
+    --> starting at object with constructor 'ClientRequest'
+    |     property 'res' -> object with constructor 'IncomingMessage'
+    --- property 'req' closes the circle
+{
+  "context": "AITradingAgent",
+  "stack": "TypeError: Converting circular structure to JSON\n    --> starting at object with constructor 'ClientRequest'\n    |     property 'res' -> object with constructor 'IncomingMessage'\n    --- property 'req' closes the circle\n    at JSON.stringify (<anonymous>)\n    at Printf.template (D:\\AI-HiveMind-Autonomous\\src\\utils\\logger.ts:10:59)\n    at Printf.transform (D:\\AI-HiveMind-Autonomous\\node_modules\\logform\\printf.js:11:26)\n    at Format.transform (D:\\AI-HiveMind-Autonomous\\node_modules\\logform\\combine.js:20:24)\n    at Console._write (D:\\AI-HiveMind-Autonomous\\node_modules\\winston-transport\\modern.js:91:33)\n    at doWrite (D:\\AI-HiveMind-Autonomous\\node_modules\\readable-stream\\lib\\_stream_writable.js:390:139)\n    at writeOrBuffer (D:\\AI-HiveMind-Autonomous\\node_modules\\readable-stream\\lib\\_stream_writable.js:381:5)\n    at Writable.write (D:\\AI-HiveMind-Autonomous\\node_modules\\readable-stream\\lib\\_stream_writable.js:302:11)\n    at DerivedLogger.ondata (D:\\AI-HiveMind-Autonomous\\node_modules\\readable-stream\\lib\\_stream_readable.js:629:20)\n    at DerivedLogger.emit (node:events:530:35)"
+}

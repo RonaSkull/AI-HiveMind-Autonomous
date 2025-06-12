@@ -34,17 +34,17 @@ if %ERRORLEVEL% NEQ 0 (
 
 echo.
 echo [4/4] Checking required packages...
-npm list @qiskit/ibm-runtime >nul 2>&1
+npm list @qiskit/algo-ibm >nul 2>&1
 if %ERRORLEVEL% NEQ 0 (
-    echo ⚠️ @qiskit/ibm-runtime is not installed
+    echo ⚠️ @qiskit/algo-ibm is not installed
     echo Installing required packages...
-    npm install @qiskit/ibm-runtime
+    npm install @qiskit/algo-ibm --legacy-peer-deps
     if %ERRORLEVEL% NEQ 0 (
         echo ❌ Failed to install required packages
         exit /b 1
     )
 ) else (
-    echo ✅ @qiskit/ibm-runtime is installed
+    echo ✅ @qiskit/algo-ibm is installed
 )
 
 echo.

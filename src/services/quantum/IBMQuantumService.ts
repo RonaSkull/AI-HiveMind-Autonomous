@@ -2,8 +2,14 @@ import { Qiskit } from 'qiskit';
 import { quantumConfig } from '@config/quantum.config';
 import { logger } from '@utils/logger';
 
+// Log configuration status
+logger.debug('IBM Quantum Service: Initializing with config', { 
+  hasApiKey: !!quantumConfig.apiKey,
+  instance: quantumConfig.instance
+});
+
 export class IBMQuantumService {
-  private qiskit: Qiskit;
+  private qiskit: Qiskit | null = null;
   private initialized: boolean = false;
 
   constructor() {
@@ -14,13 +20,14 @@ export class IBMQuantumService {
 
     try {
       this.qiskit = new Qiskit({
-        apiKey: quantumConfig.apiKey,
+        token: quantumConfig.apiKey,
         instance: quantumConfig.instance,
       });
       this.initialized = true;
       logger.info('IBM Quantum service initialized successfully');
-    } catch (error) {
-      logger.error('Failed to initialize IBM Quantum service:', error);
+    } catch (error: unknown) {
+      const errorMessage = error instanceof Error ? error.message : 'Unknown error';
+      logger.error(`Failed to initialize IBM Quantum service: ${errorMessage}`);
     }
   }
 
@@ -37,21 +44,20 @@ export class IBMQuantumService {
    * @param shots Number of shots to run (default: 1024)
    */
   async runCircuit(circuit: any, shots: number = 1024): Promise<any> {
-    if (!this.initialized) {
+    if (!this.initialized || !this.service) {
       throw new Error('IBM Quantum service is not initialized');
     }
 
     try {
       logger.debug('Running quantum circuit...');
       
-      // Get the least busy backend
-      const backend = await this.qiskit.least_busy_simulator();
+      // Get the least busy simulator backend
+      const backend = await this.qiskit.least_busy_backend({ simulator: true });
       
       // Run the circuit
       const job = await this.qiskit.run(circuit, backend, {
         shots,
         max_credits: quantumConfig.maxCredits,
-        timeout: quantumConfig.timeout,
       });
 
       logger.debug(`Job ${job.job_id} submitted to ${backend}`);
@@ -63,9 +69,10 @@ export class IBMQuantumService {
         backend: backend,
         result: result,
       };
-    } catch (error) {
-      logger.error('Error running quantum circuit:', error);
-      throw new Error(`Quantum computation failed: ${error.message}`);
+    } catch (error: unknown) {
+      const errorMessage = error instanceof Error ? error.message : 'Unknown error';
+      logger.error(`Error running quantum circuit: ${errorMessage}`);
+      throw new Error(`Quantum computation failed: ${errorMessage}`);
     }
   }
 
@@ -74,21 +81,25 @@ export class IBMQuantumService {
    * @param jobId The job ID to check
    */
   async getJobStatus(jobId: string): Promise<any> {
-    if (!this.initialized) {
+    if (!this.initialized || !this.service) {
       throw new Error('IBM Quantum service is not initialized');
     }
 
     try {
       const job = await this.qiskit.retrieve_job(jobId);
+      const status = job.status();
+      const backend = job.backend();
+      
       return {
         jobId: job.job_id,
-        status: job.status(),
+        status: status,
         creationDate: job.creation_date(),
-        backend: job.backend(),
+        backend: backend,
       };
-    } catch (error) {
-      logger.error(`Error getting status for job ${jobId}:`, error);
-      throw new Error(`Failed to get job status: ${error.message}`);
+    } catch (error: unknown) {
+      const errorMessage = error instanceof Error ? error.message : 'Unknown error';
+      logger.error(`Error getting status for job ${jobId}: ${errorMessage}`);
+      throw new Error(`Failed to get job status: ${errorMessage}`);
     }
   }
 }

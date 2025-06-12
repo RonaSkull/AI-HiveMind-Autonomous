@@ -1,45 +1,38 @@
-import winston from 'winston';
-import 'winston-daily-rotate-file';
-import path from 'path';
-import config from '@config/config';
+import winston, { format } from 'winston';
+const { combine, timestamp, printf, colorize } = format;
 
-const { combine, timestamp, printf, colorize } = winston.format;
-
-const logFormat = printf(({ level, message, timestamp, ...meta }) => {
-  const metaString = Object.keys(meta).length ? `\n${JSON.stringify(meta, null, 2)}` : '';
-  return `[${timestamp}] ${level}: ${message}${metaString}`;
+const logFormat = printf(({ level, message, timestamp, context, ...meta }) => {
+  const metaString = Object.keys(meta).length 
+    ? `\n${JSON.stringify(meta, null, 2)}` 
+    : '';
+  return `[${timestamp}] [${context || 'App'}] ${level}: ${message}${metaString}`;
 });
 
-const transports = [
-  new winston.transports.Console({
-    format: combine(colorize({ all: true }), timestamp(), logFormat),
-    level: config.agent.logLevel,
-  }),
-];
-
-if (process.env.NODE_ENV !== 'test') {
-  transports.push(
-    new winston.transports.DailyRotateFile({
-      filename: path.join('logs', 'application-%DATE%.log'),
-      datePattern: 'YYYY-MM-DD',
-      maxSize: '20m',
-      maxFiles: '14d',
-      format: combine(timestamp(), logFormat),
-      level: 'debug',
-    })
-  );
-}
+const logger = winston.createLogger({
+  level: 'debug',
+  format: combine(
+    colorize(),
+    timestamp({ format: 'YYYY-MM-DD HH:mm:ss' }),
+    logFormat
+  ),
+  transports: [
+    new winston.transports.Console()
+  ]
+});
 
 export const createLogger = (context: string) => {
   return winston.createLogger({
-    level: config.agent.logLevel,
+    level: 'debug',
     defaultMeta: { context },
-    transports,
-    exceptionHandlers: [
-      new winston.transports.File({ filename: 'logs/exceptions.log' }),
-    ],
-    exitOnError: false,
+    format: combine(
+      colorize(),
+      timestamp({ format: 'YYYY-MM-DD HH:mm:ss' }),
+      logFormat
+    ),
+    transports: [
+      new winston.transports.Console()
+    ]
   });
 };
 
-export const logger = createLogger('App');
+export { logger };

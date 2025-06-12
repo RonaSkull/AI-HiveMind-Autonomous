@@ -1,0 +1,12 @@
+{
+  "finalSignal": {
+    "signal": {
+      "action": "BUY",
+      "confidence": 0.85,
+      "timestamp": "2025-06-10T14:39:41.053Z"
+    },
+    "timestamp": "2025-06-10T14:39:41.055Z"
+  },
+  "status": "Strategy Complete",
+  "timestamp": "2025-06-10T14:39:41.060Z"
+}

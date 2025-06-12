@@ -1,8 +1,13 @@
 // Simple test for IBM Quantum API using node-fetch
-const fetch = require('node-fetch');
-const fs = require('fs');
-const path = require('path');
-require('dotenv').config({ path: path.resolve(__dirname, '../.env') });
+
+import fs from 'fs';
+import path from 'path';
+import dotenv from 'dotenv';
+import { fileURLToPath } from 'url';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+dotenv.config({ path: path.resolve(__dirname, '../.env') });
 
 const API_KEY = process.env.IBM_QUANTUM_API_KEY;
 const INSTANCE = process.env.IBM_QUANTUM_INSTANCE || 'ibm-q/open/main';
@@ -16,6 +21,7 @@ console.log('=== IBM Quantum API Test ===');
 console.log('Using instance:', INSTANCE);
 
 async function testQuantumAPI() {
+  const fetch = (await import('node-fetch')).default;
   try {
     console.log('\nTesting IBM Quantum API authentication...');
     
