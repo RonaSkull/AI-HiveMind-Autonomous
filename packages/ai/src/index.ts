@@ -6,4 +6,4 @@ export { LLMService, llmService } from './LLMService.js';
 export type { ProviderConfig } from './LLMService.js';
 
 // RAG service will be added here
-export { RAGService } from './RAGService.js';
+export { RAGService, ragService } from './RAGService.js';
